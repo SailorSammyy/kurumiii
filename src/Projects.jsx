@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import bgVideo from "./assets/main3.mp4";
+import bgVideo from "./assets/main4.mp4";
 
 const GH_USER     = "sailorsammyy";
 const CACHE_KEY   = "gh_repos_cache";
@@ -205,11 +205,14 @@ export default function Projects() {
           font-family: 'Cinzel Decorative', serif;
           font-size: clamp(12px, 1.8vw, 22px);
           letter-spacing: 2px;
-          color: #f5ede0;
+          color: #fff;
           text-shadow:
-            0 0 8px rgba(139,26,26,0.9),
-            -1px -1px 0 rgba(0,0,0,0.55),
-             1px  1px 0 rgba(0,0,0,0.55);
+            0 0 12px rgba(0,0,0,0.95),
+            0 0 20px rgba(139,26,26,0.8),
+            -2px -2px 0 rgba(0,0,0,0.9),
+             2px  2px 0 rgba(0,0,0,0.9),
+            -2px  2px 0 rgba(0,0,0,0.9),
+             2px -2px 0 rgba(0,0,0,0.9);
           transition: color 0.15s ease, text-shadow 0.15s ease;
           white-space: nowrap;
           overflow: hidden;
@@ -221,11 +224,12 @@ export default function Projects() {
         .sp-row-lang {
           font-family: 'Montserrat', sans-serif;
           font-size: clamp(9px, 0.9vw, 11px);
-          color: rgba(200,169,110,0.65);
+          color: rgba(255,220,150,0.9);
           letter-spacing: 1px;
+          text-shadow: 0 0 8px rgba(0,0,0,0.9), 0 1px 3px rgba(0,0,0,0.8);
           transition: color 0.15s ease;
         }
-        .sp-row.active .sp-row-lang { color: rgba(100,30,30,0.7); }
+        .sp-row.active .sp-row-lang { color: rgba(100,30,30,0.7); text-shadow: none; }
 
         .sp-row-right {
           display: flex;
@@ -270,9 +274,15 @@ export default function Projects() {
         .sp-detail-title {
           font-family: 'Cinzel Decorative', serif;
           font-size: clamp(18px, 2.8vw, 38px);
-          color: #f5ede0;
+          color: #fff;
           letter-spacing: 2px;
-          text-shadow: 0 0 12px rgba(139,26,26,0.8), -1px -1px 0 rgba(0,0,0,0.7), 1px 1px 0 rgba(0,0,0,0.7);
+          text-shadow: 
+            0 0 16px rgba(0,0,0,0.95),
+            0 0 24px rgba(139,26,26,0.9),
+            -2px -2px 0 rgba(0,0,0,0.9),
+             2px  2px 0 rgba(0,0,0,0.9),
+            -2px  2px 0 rgba(0,0,0,0.9),
+             2px -2px 0 rgba(0,0,0,0.9);
           opacity: 0;
           transform: translateY(10px);
           animation: sp-fade-up 0.32s cubic-bezier(0.22,1,0.36,1) forwards;
@@ -289,9 +299,12 @@ export default function Projects() {
           font-family: 'Montserrat', sans-serif;
           font-weight: 300;
           font-size: clamp(13px, 1.4vw, 16px);
-          color: rgba(245,237,224,0.82);
+          color: rgba(255,250,240,0.95);
           line-height: 1.7;
-          text-shadow: 0 1px 8px rgba(0,0,0,0.8);
+          text-shadow: 
+            0 0 12px rgba(0,0,0,0.95),
+            0 2px 8px rgba(0,0,0,0.9),
+            0 1px 3px rgba(0,0,0,0.8);
           opacity: 0;
           transform: translateY(10px);
           animation: sp-fade-up 0.32s cubic-bezier(0.22,1,0.36,1) 0.08s forwards;
@@ -400,9 +413,13 @@ export default function Projects() {
         .sp-mobile-detail-title {
           font-family: 'Cinzel Decorative', serif;
           font-size: clamp(20px, 6.5vw, 34px);
-          color: #f5ede0;
+          color: #fff;
           letter-spacing: 2px;
-          text-shadow: 0 0 12px rgba(139,26,26,0.7), -1px -1px 0 rgba(0,0,0,0.6), 1px 1px 0 rgba(0,0,0,0.6);
+          text-shadow: 
+            0 0 16px rgba(0,0,0,0.95),
+            0 0 24px rgba(139,26,26,0.9),
+            -2px -2px 0 rgba(0,0,0,0.9),
+             2px  2px 0 rgba(0,0,0,0.9);
           border-bottom: 1px solid rgba(139,26,26,0.3);
           padding-bottom: 14px;
         }
@@ -416,8 +433,9 @@ export default function Projects() {
           font-family: 'Montserrat', sans-serif;
           font-weight: 300;
           font-size: clamp(14px, 4vw, 17px);
-          color: rgba(245,237,224,0.82);
+          color: rgba(255,250,240,0.95);
           line-height: 1.7;
+          text-shadow: 0 0 10px rgba(0,0,0,0.9), 0 2px 6px rgba(0,0,0,0.8);
         }
         .sp-mobile-detail-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 
